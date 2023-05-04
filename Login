@@ -1,0 +1,45 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp();
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Login Page',
+      home: Scaffold(
+        backgroundColor: const Color(0xff6d6875),
+        appBar: AppBar(
+          title: const Text('Login Page'),
+          backgroundColor: const Color(0xff3b3a30),
+        ),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  primary: const Color(0xff35a7ff),
+                ),
+                child: const Text('Login', style: TextStyle(color: Colors.white)),
+              ),
+              const SizedBox(height: 20),
+              OutlinedButton(
+                onPressed: () {},
+                style: OutlinedButton.styleFrom(
+                  side: BorderSide(color: const Color(0xffd5d5d5)),
+                ),
+                child: const Text('Sign Up', style: TextStyle(color: const Color(0xffd5d5d5))),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
