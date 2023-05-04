@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
               ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
-                  primary: const Color(0xff35a7ff),
+                  backgroundColor: const Color(0xff35a7ff),
                 ),
                 child: const Text('Login', style: TextStyle(color: Colors.white)),
               ),
@@ -32,9 +32,9 @@ class MyApp extends StatelessWidget {
               OutlinedButton(
                 onPressed: () {},
                 style: OutlinedButton.styleFrom(
-                  side: BorderSide(color: const Color(0xffd5d5d5)),
+                  side: const BorderSide(color:  Color(0xffd5d5d5)),
                 ),
-                child: const Text('Sign Up', style: TextStyle(color: const Color(0xffd5d5d5))),
+                child: const Text('Sign Up', style: TextStyle(color: Color(0xffd5d5d5))),
               ),
             ],
           ),
